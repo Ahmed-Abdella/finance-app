@@ -1,14 +1,12 @@
 .login-form {
   max-width: 400px;
   margin: 36px auto;
-  padding: 20px;
-  border: 2px solid #141e27;
-  border-radius: 5px;
+  padding: 0px 20px;
 }
 
 h2 {
   text-align: center;
-  margin: 20px auto;
+  margin: 40px auto 0 auto;
 }
 
 .login-form label {
