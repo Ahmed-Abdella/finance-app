@@ -13,7 +13,6 @@ export default function Login() {
     <div>
       <h2>Login</h2>
       <form onSubmit={handleSubmit} className={styles["login-form"]}>
-        <h2></h2>
         <label>
           <span>email:</span>
           <input
