@@ -14,22 +14,25 @@ export default function NavBar() {
       <nav>
         <ul>
           {!user && (
-            <li>
-              <Link to="/login">Login</Link>{" "}
-            </li>
+            <>
+              <li>
+                <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/signup">Signup</Link>
+              </li>
+            </>
           )}
 
-          {!user && (
-            <li>
-              <Link to="/signup">Signup</Link>
-            </li>
-          )}
           {user && (
-            <li>
-              <button className="btn" onClick={logout}>
-                Logout
-              </button>
-            </li>
+            <>
+              <li>Hi,{user.displayName}</li>
+              <li>
+                <button className="btn" onClick={logout}>
+                  Logout
+                </button>
+              </li>
+            </>
           )}
         </ul>
       </nav>
